@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+header {
+  width: calc(100vw-20px);
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.flexContainer {
+  margin: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* flex-wrap: ; */
+}
+
+#nav-list {
+  flex: 0 0 80%;
+
+  display: flex;
+  align-items: baseline;
+}
+
+#nav-list a {
+  transition: all 0.3s;
+}
+
+#nav-list a:hover {
+  opacity: 0.5;
+}
+
+#miscButtons {
+  flex: 0 0 20%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#miscButtons a:hover {
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav li {
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.iconButtons {
+  font-size: 2em;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+
+body {
+  margin-bottom: 68px;
+}
+
+.madeByNames {
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  padding-left: 10px;
+  border-left: 1px solid rgb(119, 115, 115);
+  margin: 10px;
+}
+
+.madeByNames a {
+  text-decoration: none;
+}
+
+/**
+*Iphone5
+*
+*/
+@media only screen and (max-width: 320px) {
+  .flexContainer {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/**
+*Iphone 6/7/8
+*/
+@media only screen and (max-width: 375px) {
+  .flexContainer {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/**
+*Iphone 6/7/8 Plus
+*/
+@media only screen and (max-width: 414px) {
+  .flexContainer {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/**
+*Ipad 
+*/
+@media only screen and (max-width: 768px) {
+  .flexContainer {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+/**
+*Ipad pro
+*/
+@media only screen and (max-width: 1024px) {
+  .flexContainer {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,66 @@
+/* background during image zoom */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  align-items: center;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  /*box-shadow: 5px 10px #b3afaf;*/
+  box-shadow: 0 0 4px 1px rgba(109, 156, 172, 0.5);
+}
+
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.description {
+  position: absolute;
+  display: block;
+  font-size: 25px;
+  color: #f1f1f1;
+  text-align: center;
+  left: 50%;
+  width: 25%;
+  max-width: 50%;
+  padding-top: 4px;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

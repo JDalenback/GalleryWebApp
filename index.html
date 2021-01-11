@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Digital Journal</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbarNew.css" />
+    <link rel="stylesheet" href="css/wrapper.css" />
+    <link rel="stylesheet" href="css/imgClickStyle.css" />
+    <link rel="stylesheet" href="css/galleryItemButtons.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="flexContainer">
+          <ul id="nav-list">
+            <li class="logo"><a href="#">Digital Journal</a></li>
+            <li id="All" class="nav-item"><a>All</a></li>
+          </ul>
+
+          <div id="miscButtons">
+            <a class="iconButtons fas fa-plus" id="add-album"></a>
+            <label class="iconButtons">
+              <input type="file" style="display: none" accept="image/*" />
+              <a><i class="fas fa-upload"></i></a>
+            </label>
+            <a class="iconButtons" id="sort"
+              ><i class="fas fa-sort-numeric-down"></i
+            ></a>
+            <a class="iconButtons"
+              ><span id="heartCounter"></span><i class="fas fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper"></div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN -->
+    <main>
+      <div class="modal" id="myModal">
+        <img class="modal-content" id="modalImg" />
+        <p class="close" id="closeId">&times;</p>
+        <p class="description" id="descriptionId"></p>
+      </div>
+      <div class="gallery-wrapper">
+        <div id="gallery"></div>
+      </div>
+    </main>
+    <!-- MAIN END -->
+
+    <script src="./js/main.js" async defer></script>
+  </body>
+</html>

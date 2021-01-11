@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#gallery{
+  margin-top:5px;
+
+}
+
+.gallery-item{
+  position:relative;
+
+}
+.gallery-item >img {
+  width: 100% !important;
+  height: auto !important;
+  
+}
+
+
+.gallery-item >img:hover {
+  box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
+  opacity: 0.5;
+  cursor:pointer;
+}
+
+
+
+/* Most smartphones */
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  #gallery{
+    line-height: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap:   5px;
+    -moz-column-count:    1;
+    -moz-column-gap:      5px;
+    column-count:         1;
+    column-gap:           5px; 
+    
+}
+
+}
+
+/*low resolution Tablets and mobile in landscape mode*/ 
+@media only screen and (min-width:481px) and (max-width: 767px) and (orientation: landscape) {
+    #gallery{
+      -webkit-column-count: 2;
+      -webkit-column-gap:   5px;
+      -moz-column-count:    2;
+      -moz-column-gap:      5px;
+      column-count:         2;
+      column-gap:           5px; 
+
+    }
+
+}
+
+
+/* laptops and desktops */
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  #gallery{
+    -webkit-column-count: 4;
+    -webkit-column-gap:   5px;
+    -moz-column-count:    4;
+    -moz-column-gap:      5px;
+    column-count:         4;
+    column-gap:           5px; 
+
+
+  }
+}
+
+/*laptops and desktops */
+@media only screen and (min-width: 1281px) {
+  #gallery {
+    line-height: 20px;
+    -webkit-column-count: 5;
+    -webkit-column-gap:   5px;
+    -moz-column-count:    5;
+    -moz-column-gap:      5px;
+    column-count:         5;
+    column-gap:           5px;  
+    
+  }
+}

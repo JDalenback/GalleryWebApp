@@ -1,0 +1,44 @@
+.logo {
+    margin-top: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .biggerlogo a {
+    margin: 2rem;
+  }
+  
+  .smallerlogo a {
+    color: rgb(238, 231, 231);
+    margin: 2rem;
+    font-size: x-small;
+  }
+  
+  .smallerlogo :hover {
+    color: rgb(146, 136, 136);
+  }
+  
+  .logo a {
+    text-decoration: none;
+  }
+  
+  .nav-item :hover {
+    font-weight: bold;
+  }
+  
+  .nav-item a {
+    margin: 1rem;
+    font-size: 0.8rem;
+    color: rgb(138, 121, 121);
+    text-decoration: none;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+    list-style: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    margin-right: 15rem;
+  }
