@@ -1,3 +1,5 @@
+Gallery web app. Upload your images and save them to albums.
+
 # GalleryProjectScrum
 Project for Java Developer on EC Utbildning 2020.
 
